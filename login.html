@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color:black;
+            display: space-between;
+            justify-content: right;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            display:flex center;
+            width:40%;
+        }
+        .login-form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            /*border:2px solid blueviolet;*/
+        }
+        .login-form input{
+            margin-top: 20px;
+        }
+        .login-space{
+            padding: 20px 50px;
+        }
+        .button:hover{
+            background-color: rgb(128, 200, 220);
+        }
+    </style>
+</head>
+<body>
+    <!--"Nav guides the way like a map."-->
+    <nav class="login-space">
+        <!--Anchor Link a Webpage-->
+        <div>
+            <a href="">Home</a> 
+            <a href="">Profile</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+        </div>
+        <a href=""><button class="button">Login</button></a>
+    </nav>
+    <section class="login-form-container">
+        <form class="login-form">
+            <h3>Please Login</h3>
+            <input type="email" name="Your Email" id=""placeholder="Your Email" required>
+            <input type="password" name="Your Password" id=""placeholder="Your Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+    
+</body>
